@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 26.9%;
 
-    --primary: 213 94% 68%;
+    --primary: 142 71% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 213 94% 78%;
+    --primary-glow: 142 71% 55%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 215 25% 26.9%;
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 213 94% 68%;
+    --accent: 142 71% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -41,7 +41,7 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 213 94% 68%;
+    --ring: 142 71% 45%;
 
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(210 40% 98%));
@@ -80,9 +80,9 @@ All colors MUST be HSL.
     --popover: 215 25% 6.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 213 94% 78%;
+    --primary: 142 71% 55%;
     --primary-foreground: 215 25% 6.9%;
-    --primary-glow: 213 94% 88%;
+    --primary-glow: 142 71% 65%;
 
     --secondary: 215 25% 16.9%;
     --secondary-foreground: 210 40% 98%;
@@ -90,7 +90,7 @@ All colors MUST be HSL.
     --muted: 215 25% 16.9%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 213 94% 78%;
+    --accent: 142 71% 55%;
     --accent-foreground: 215 25% 6.9%;
 
     --destructive: 0 62.8% 30.6%;
@@ -104,7 +104,7 @@ All colors MUST be HSL.
 
     --border: 215 25% 16.9%;
     --input: 215 25% 16.9%;
-    --ring: 213 94% 78%;
+    --ring: 142 71% 55%;
 
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(215 25% 10.9%));
