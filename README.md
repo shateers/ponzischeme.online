@@ -1,4 +1,39 @@
-# Welcome to your Lovable project
+# PonziSchemes.online 🚨
+A community-driven platform to expose Ponzi schemes and help people stay safe.  
+Think **Glassdoor for scams** — users can upload Ponzi schemes, review them anonymously, and share red flags.  
+
+## 🎯 Vision
+Millions lose money to scams each year. While many Ponzi schemes are illegal, others (like MLMs or timeshare contracts) are legal but exploitative.  
+This project aims to **educate, warn, and protect people** by building an open platform.
+
+## 🛠 Features (MVP)
+- Submit new Ponzi schemes with details.
+- Anonymous reviews (pros, cons, money lost, red flags).
+- Star rating system (trust score).
+- Search & filter scams by type, location, and rating.
+- Scam awareness guides + reporting resources.
+
+## 🤝 How You Can Contribute
+- Developers → help build backend (Node/Django) & frontend (React/Next.js).  
+- Designers → wireframes, UI/UX suggestions.  
+- Writers → scam awareness guides, blog content.  
+- Researchers → collect data on existing Ponzi/MLM scams.  
+
+## 🚀 Tech Stack (Suggested)
+- Frontend: React / Next.js + TailwindCSS  
+- Backend: Node.js (Express) or Django REST  
+- Database: PostgreSQL/MySQL (with ElasticSearch for search)  
+- Hosting: Vercel / Netlify / AWS  
+
+## 📌 Get Involved
+1. Fork the repo  
+2. Check "Issues" for tasks  
+3. Submit PRs  
+4. Join the discussion in "Discussions" tab  
+
+## 📜 License
+MIT License — free to use, modify, and share.
+
 
 ## Project info
 
