@@ -119,24 +119,24 @@ const Quiz = () => {
     const IconComponent = result.icon;
 
     return (
-      <section id="quiz" className="py-16 bg-gradient-subtle">
+      <section id="quiz" className="py-12 sm:py-16 bg-gradient-subtle">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="shadow-elegant">
-            <CardHeader className="text-center">
+            <CardHeader className="text-center p-4 sm:p-6">
               <div className="flex justify-center mb-4">
-                <IconComponent className={`h-16 w-16 text-${result.color}`} />
+                <IconComponent className={`h-12 w-12 sm:h-16 sm:w-16 text-${result.color}`} />
               </div>
-              <CardTitle className="text-2xl md:text-3xl">{result.title}</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl md:text-3xl px-2">{result.title}</CardTitle>
             </CardHeader>
-            <CardContent className="text-center space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+            <CardContent className="text-center space-y-4 sm:space-y-6 p-4 sm:p-6">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed px-2">
                 {result.message}
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                <Card className="p-4">
-                  <h4 className="font-semibold mb-2">Next Steps:</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1 text-left">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 sm:mt-8">
+                <Card className="p-3 sm:p-4">
+                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Next Steps:</h4>
+                  <ul className="text-xs sm:text-sm text-muted-foreground space-y-1 text-left">
                     <li>• Document all communications</li>
                     <li>• Consult a financial advisor</li>
                     <li>• Research the company thoroughly</li>
@@ -144,9 +144,9 @@ const Quiz = () => {
                   </ul>
                 </Card>
                 
-                <Card className="p-4">
-                  <h4 className="font-semibold mb-2">Resources:</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1 text-left">
+                <Card className="p-3 sm:p-4">
+                  <h4 className="font-semibold mb-2 text-sm sm:text-base">Resources:</h4>
+                  <ul className="text-xs sm:text-sm text-muted-foreground space-y-1 text-left">
                     <li>• SEBI Investor Complaints</li>
                     <li>• RBI Customer Service</li>
                     <li>• Cybercrime.gov.in</li>
@@ -155,7 +155,7 @@ const Quiz = () => {
                 </Card>
               </div>
 
-              <Button onClick={resetQuiz} variant="outline" className="mt-6">
+              <Button onClick={resetQuiz} variant="outline" className="mt-4 sm:mt-6">
                 <RotateCcw className="mr-2 h-4 w-4" />
                 Take Quiz Again
               </Button>
@@ -167,21 +167,21 @@ const Quiz = () => {
   }
 
   return (
-    <section id="quiz" className="py-16 bg-gradient-subtle">
+    <section id="quiz" className="py-12 sm:py-16 bg-gradient-subtle">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4 px-2">
             Are You Trapped in a Ponzi Scheme?
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground px-4">
             Take this quick assessment to evaluate your investment
           </p>
         </div>
 
         <Card className="shadow-elegant">
-          <CardHeader>
-            <div className="flex justify-between items-center">
-              <CardTitle className="text-xl">
+          <CardHeader className="p-4 sm:p-6">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
+              <CardTitle className="text-lg sm:text-xl">
                 Question {currentQuestion + 1} of {questions.length}
               </CardTitle>
               <div className="text-sm text-muted-foreground">
@@ -196,17 +196,17 @@ const Quiz = () => {
             </div>
           </CardHeader>
           
-          <CardContent className="space-y-6">
-            <h3 className="text-lg font-medium leading-relaxed">
+          <CardContent className="space-y-4 sm:space-y-6 p-4 sm:p-6">
+            <h3 className="text-base sm:text-lg font-medium leading-relaxed">
               {questions[currentQuestion].question}
             </h3>
             
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
               {questions[currentQuestion].options.map((option, index) => (
                 <Button
                   key={index}
                   variant="outline"
-                  className="w-full justify-start text-left h-auto p-4 hover:bg-primary/5"
+                  className="w-full justify-start text-left h-auto p-3 sm:p-4 hover:bg-accent hover:text-accent-foreground border-2 transition-all duration-200 text-sm sm:text-base"
                   onClick={() => handleAnswer(index)}
                 >
                   {option}
